@@ -1,0 +1,403 @@
+/* set the font and whatnot */
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+
+/* Main build */
+body {
+    font-family: 'heebo', sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/*
+
+
+Header
+
+
+*/
+
+
+.header {
+
+    position: fixed;
+    top: 0;
+
+    background-color: rgb(242, 242, 242);
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top: 1px solid rgb(163,186, 198);
+    border-bottom: 1px solid rgb(163,186, 198);
+
+    width: 100%;
+    height: 100px;
+
+}
+
+/*
+
+Button Setup
+
+*/
+.option {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: small;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(230, 0, 0);
+    color: white;
+}
+
+.option:hover {
+    background-color: rgb(171, 21, 27);;
+}
+
+.openacct {
+    width: 150px;
+    line-height: 40px;
+}
+
+.learn-more {
+    display: inline-block;
+    width: 274px;
+    line-height: 40px;
+
+}
+.login {
+    background-color: rgb(50, 70, 90);
+}
+
+/*
+
+
+display
+
+
+*/
+.main-display {
+    padding-top: 100px;
+    background-color: rgb(242, 242, 242);
+
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.products {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding-right: 5rem;
+
+}
+
+.part1-image {
+    margin-top: 30px;
+    width: 681px;
+    height: 313px;
+}
+
+.part1-body {
+    text-align: left;
+}
+
+/*
+
+display fonts
+
+*/
+
+.part1 {
+    text-align: left;
+    font-size: x-large;
+}
+
+/*
+
+
+Options
+
+
+*/
+
+.choice-list {
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7rem;
+    width: 60rem;
+}
+
+.choice {
+
+    width: 19rem;
+    flex-shrink: 0;
+    font-size: 1rem;
+    padding: 0;
+}
+
+/*
+
+display fonts
+
+*/
+.part2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*
+
+WHY TRADE WITH US?
+
+*/
+
+.reason-list {
+    margin-top: 80px;
+
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+}
+
+.reason-list h1 {
+    width: 100%;
+}
+
+.reason {
+    width: fit-content;
+    padding: 0 75px;
+    text-align: center;
+}
+
+.reason h3 {
+    font-size: 15px;
+}
+
+.reason-pic {
+    width: 90px;
+}
+
+/*
+
+OPEN AN ACCOUNT NOW!!
+
+*/
+
+.account {
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 75px;
+
+    padding-bottom: 40px;
+}
+
+.account h1 {
+    width: 100%;
+    height: 0px;
+}
+
+/*
+
+COMPARISON GRID
+
+*/
+
+.comparison {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 20px;
+    background-color: rgb(242, 242, 242);
+}
+
+.comparison-p {
+    line-height: 50px;
+}
+
+.container {
+    width: 60rem;
+}
+
+.row {
+    display: grid;
+    text-align: center;
+
+    grid-template-rows: 100px;
+    grid-template-columns: 2fr 1fr 1fr;
+
+}
+
+.height{
+    line-height: 100px;
+}
+
+.row-text {
+    border-color: rgb(163,186, 198);
+    border-style: solid;
+    border-width: 0.5px 0;
+
+    line-height: 25px;
+
+    padding-top: 40px;
+
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.row-start {
+    padding: 0;
+    font-size: 12px;
+}
+
+.row-opening {
+    font-size: 23px;
+}
+
+.row-span {
+    padding: 0;
+    font-size: 15px;
+}
+
+.row-num {
+    background-color: black;
+    color: rgb(242, 242, 242);
+
+    border-color: rgb(242, 242, 242);
+    border-style: solid;
+    border-width: 1px;
+
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.row-zero {
+    background-color: rgb(230, 0, 0);
+    color: rgb(242, 242, 242);
+
+    border-color: rgb(242, 242, 242);
+    border-style: solid;
+    border-width: 1px;
+
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.row-text.row-num {
+    line-height: 25px;
+
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+/*
+
+Link setup
+
+*/
+.redlink {
+    display: block;
+
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: auto;
+
+}
+
+.redlink:hover {
+    text-decoration: underline;
+}
+
+/*
+
+Discover accounts
+
+*/
+
+.discover {
+    padding-top: 30px;
+    text-justify: auto;
+
+}
+
+.accounts-container{
+    margin: 0 auto;
+    display: grid;
+    width: 960px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.accounts {
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+ul {
+    font-weight: bold;
+    text-align: left;
+}
+
+/*
+
+closing!!
+
+*/
+
+.closing {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    font-weight: normal;
+    font-style: italic;
+
+    margin-bottom: 30px;
+}
+
+.closing-text {
+    text-align: left;
+    width: max-content;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.closing-img {
+    padding-top: 60px;
+    width: 300px;
+    margin: 0 40%;
+}
+
+.closing-link{
+    display: inline;
+    font-size: smaller;
+}
